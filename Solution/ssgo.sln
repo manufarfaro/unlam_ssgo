@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Web Developer Express 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ssgo", "..\", "{EBF7346A-B395-462E-B0FC-287077F0E888}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/ssgo"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\svn\ssgo\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ssgo\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ssgo"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\svn\ssgo\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ssgo\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59418"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WSProducto", "..\..\WSProducto\", "{F88508FD-A12C-45AF-A922-EAF77E4A648E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/WSProducto"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\svn\WSProducto\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WSProducto\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WSProducto"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\svn\WSProducto\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WSProducto\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49630"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBF7346A-B395-462E-B0FC-287077F0E888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF7346A-B395-462E-B0FC-287077F0E888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88508FD-A12C-45AF-A922-EAF77E4A648E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88508FD-A12C-45AF-A922-EAF77E4A648E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

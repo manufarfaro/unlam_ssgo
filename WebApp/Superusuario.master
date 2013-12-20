@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="false" CodeFile="Superusuario.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   <form id="form_master" runat="server" action="#"> 
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <asp:Image ID="ImageLogo" runat="server" ImageUrl="~/Styles/imagenes/head_image_logo.png"/>
+            </div>
+   
+            <div id="menu" class="hideSkiplink">
+                
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                    IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Administracion">
+                            <asp:MenuItem Text="Categoria" Value="Categoria">
+                                <asp:MenuItem NavigateUrl="~/Administracion/VerCategoria.aspx" 
+                                    Text="Ver Categorias" Value="Ver Categorias"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/administracion/crearcategoria.aspx" 
+                                    Text="Crear Categoria" Value="Crear Categoria"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem
+                                Text="Producto" Value="Producto">
+                                <asp:MenuItem NavigateUrl="~/Administracion/VerProducto.aspx" 
+                                    Text="Ver Productos" Value="Ver Productos"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/administracion/agregarproducto.aspx" 
+                                    Text="Agregar Producto" Value="Agregar Producto"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/administracion/venta.aspx" Text="Venta">
+                            </asp:MenuItem>
+
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Usuarios">
+                            <asp:MenuItem NavigateUrl="~/Usuarios/VerUsuariosRegistrados.aspx"
+                                Text="Ver Usuarios" Value="Ver Usuarios"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/usuarios/crearusuario.aspx" Text="Crear Usuario" />
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Mi Cuenta">
+                            <asp:MenuItem NavigateUrl="~/MiCuenta/EditarCuenta.aspx" Text="Editar Datos" />
+                            <asp:MenuItem NavigateUrl="~/MiCuenta/CambiarClave.aspx" Text="Cambiar Clave" />
+                            <asp:MenuItem NavigateUrl="~/Logout.aspx" Text="Salir" />
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        
+        <div class="footer clear">
+            Trabajo Pr&aacute;ctico Programaci&oacute;n web 3. 2012
+        </div>
+    </div>
+    
+    </form>
+</body>
+</html>
